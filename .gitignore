@@ -9,7 +9,7 @@ pixi.lock
 **/__pycache__/*
 __pycache__
 __pycache__/
-**/*.pyc
+*.pyc
 *.py[codz]
 *$py.class
 
