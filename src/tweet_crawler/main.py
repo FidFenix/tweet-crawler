@@ -1,10 +1,10 @@
 import os
 import getpass
 from dotenv import find_dotenv, load_dotenv
-from collect_data import get_tweets_and_save
+from tweet_crawler.collect_data import get_tweets_and_save, como
 
 def load_envs():
-    print('loading... envs')
+    print('loading envs...')
 
     try:
         load_dotenv(find_dotenv())
@@ -22,4 +22,5 @@ if __name__=="__main__":
     bearer_token = os.environ['TWITTER_BEARER_TOKEN']
     company_name = os.environ['TWITTER_COMPANY_TO_CRAWL_FROM']
     print(f'crawling tweets from company: {company_name}')
-    get_tweets_and_save(bearer_token=bearer_token, company_tweet=company_name)
+    como()
+    #get_tweets_and_save(bearer_token=bearer_token, company_tweet=company_name)

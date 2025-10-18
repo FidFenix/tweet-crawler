@@ -17,7 +17,7 @@ platforms = ["osx-arm64"]
 tweet_crawler = { path = ".", editable = true }
 
 [tool.pixi.tasks]
-corre = "python ./src/tweet_crawler/main.py"
+start = "python ./src/tweet_crawler/main.py"
 
 [tool.pixi.dependencies]
 python = "3.10.*"

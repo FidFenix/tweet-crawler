@@ -3,6 +3,9 @@ import tweepy
 import time
 import pandas as pd
 
+def como():
+    print('asa')
+    
 def get_tweets_and_save(bearer_token: str, company_tweet: str) -> None:
     # ========================
     # 1. Authenticate
